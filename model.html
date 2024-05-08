@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        html{
+            font-size: 22px;
+        }
+
+        main{
+            width: 80%;
+            height: 600px;
+            background-color: aqua;
+            overflow: auto;
+            margin: auto;
+        }
+        h1{
+            background-color: black;
+            color: #fff;
+            /* text-align: center; */
+            text-transform: uppercase;
+            padding-inline: 20px;
+            padding-block: 70px;
+            margin: 40px;
+            border-radius: 25px 25px 0 0 ;
+
+        }
+
+        h1~p>span:first-of-type{
+            color:green;
+            background-color: white;
+            padding: 10px;
+            display: inline-flex;
+
+        }
+
+        p{
+            border: 20px dotted violet;
+            border-inline: 30px groove fuchsia;
+            border-block: 30px ridge fuchsia;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>box model</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente impedit repellendus deserunt, deleniti esse nemo eius minus repellat ex doloremque. Deleniti <span>dolorem quia,</span> nam conseqexercitationem quod! <span> Modi accusantium alias</span> deleniti veniam commodi facerete doloremque!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente impedit repellendus deserunt, conseqexercitationem quod! <span>Modi accusantium alias deleniti veniam </span>dolorem quia, deleniti esse nemo eius minus repellat ex doloremque. Deleniti nam </p>
+
+      
+    <div></div>
+       
+    </main>
+</body>
+</html>

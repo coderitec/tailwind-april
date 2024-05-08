@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+    <style>
+        main{
+            width: 80%;
+            margin: 2em auto;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,200px);
+        }
+        main div{
+
+            color: wheat;
+            background-color: blue;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        main div:first-of-type{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>-</div>
+        <div>*</div>
+        <div>/</div>
+        <div>+</div>
+        <div>=</div>
+        <div>reset</div>
+        <div>Del</div>
+    </main>
+
+    <script>
+        const div = document.querySelectorAll('div')
+        let ans = ''
+
+        div[1].addEventListener('click', () => {
+             ans += '1'
+            div[0].textContent = ans})
+
+        div[2].addEventListener('click', () => {
+             ans += '2'
+            div[0].textContent = ans})
+
+        div[3].addEventListener('click', () => {
+             ans += '3'
+            div[0].textContent = ans})
+
+        div[4].addEventListener('click', () => {
+             ans += '4'
+            div[0].textContent = ans})
+
+        div[5].addEventListener('click', () => {
+             ans += '5'
+            div[0].textContent = ans})
+
+        div[6].addEventListener('click', () => {
+             ans += '6'
+            div[0].textContent = ans})
+
+        div[7].addEventListener('click', () => {
+             ans += '7'
+            div[0].textContent = ans})
+
+        div[8].addEventListener('click', () => {
+             ans += '8'
+            div[0].textContent = ans})
+
+        div[9].addEventListener('click', () => {
+             ans += '9'
+            div[0].textContent = ans})
+
+        div[10].addEventListener('click', () => {
+             ans += '0'
+            div[0].textContent = ans})
+
+        div[11].addEventListener('click', () => {
+             ans += '-'
+            div[0].textContent = ans})
+
+        div[12].addEventListener('click', () =>{
+             ans += '*'
+            div[0].textContent = ans})
+
+        div[13].addEventListener('click', () => {
+             ans += '/'
+            div[0].textContent = ans})
+
+        div[14].addEventListener('click', () =>{
+             ans += '+'
+            div[0].textContent = ans})
+
+        div[15].addEventListener('click', () =>{
+            ans =eval(ans)
+            div[0].textContent = ans
+
+        })
+        div[16].addEventListener('click', () =>{
+            ans = ''
+            div[0].textContent = ans
+
+        })
+        div[17].addEventListener('click', () =>{
+            ans = ans.slice(0,ans.length-1)
+            div[0].textContent = ans
+
+        })
+
+    </script>
+</body>
+</html>
